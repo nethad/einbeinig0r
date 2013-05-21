@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @participant.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @participant.email %>
+</p>
+
+<p>
+  <b>Born in year:</b>
+  <%= @participant.born_in_year %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @participant.gender %>
+</p>
+
+<p>
+  <b>Topic keywords:</b>
+  <%= @participant.topic_keywords %>
+</p>
+
+<p>
+  <b>Topic description:</b>
+  <%= @participant.topic_description %>
+</p>
+
+<p>
+  <b>Skype user:</b>
+  <%= @participant.skype_user %>
+</p>
+
+<p>
+  <b>Gmail address:</b>
+  <%= @participant.gmail_address %>
+</p>
+
+<p>
+  <b>Sip address:</b>
+  <%= @participant.sip_address %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @participant.phone_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_participant_path(@participant) %> |
+<%= link_to 'Back', participants_path %>

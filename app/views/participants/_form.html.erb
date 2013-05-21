@@ -1,0 +1,20 @@
+<%= simple_form_for(@participant) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :born_in_year %>
+    <%= f.input :gender %>
+    <%= f.input :topic_keywords %>
+    <%= f.input :topic_description %>
+    <%= f.input :skype_user %>
+    <%= f.input :gmail_address %>
+    <%= f.input :sip_address %>
+    <%= f.input :phone_number %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
