@@ -3,7 +3,8 @@
 one:
   name: Off By One Jesus
   email: jesus@godlovesyou.tv
-  born_in_year: 1
+  gender: male
+  born_in_year: 2013
   topic_keywords: dad,myrrh,frankincense
   topic_description: Read the keywords
   skype_user: jesus1337
@@ -14,7 +15,8 @@ one:
 two:
   name: MyString
   email: MyString
-  born_in_year: 1
+  gender: other
+  born_in_year: 1987
   topic_keywords: MyString
   topic_description: MyText
   skype_user: MyString
