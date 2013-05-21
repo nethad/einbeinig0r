@@ -43,3 +43,6 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+
+gem 'simple_form'
