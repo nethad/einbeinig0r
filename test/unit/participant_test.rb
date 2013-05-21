@@ -32,6 +32,24 @@ class ParticipantTest < ActiveSupport::TestCase
       it { wont allow_value("0441234567@voip").for(:sip_address) }
     end
 
+    describe "gender validation" do
+      it { must allow_value("male").for(:gender) }
+      it { must allow_value("female").for(:gender) }
+      it { must allow_value("other").for(:gender) }
+      it { must allow_value("n/a").for(:gender) }
+      it { wont allow_value("somevalue").for(:gender) }
+    end
+
+    describe "born in year validation" do
+      it { wont allow_value(1899).for(:born_in_year) }
+      it { wont allow_value(2101).for(:born_in_year) }
+      it { must allow_value(1900).for(:born_in_year) }
+      it { must allow_value(2100).for(:born_in_year) }
+      it { must allow_value(1988).for(:born_in_year) }
+      it { wont allow_value(0).for(:born_in_year) }
+      it { wont allow_value(-1).for(:born_in_year) }
+    end
+
   end
 
 end
