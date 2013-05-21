@@ -25,9 +25,9 @@
     <td><%= participant.gender %></td>
     <td><%= participant.topic_keywords %></td>
     <td><%= participant.topic_description %></td>
-    <td><%= participant.skype_user %></td>
+    <td><%= skype_link_to("Call #{participant.skype_user}", participant.skype_user)%></td>
     <td><%= participant.gmail_address %></td>
-    <td><%= participant.sip_address %></td>
+    <td><%= sip_link_to("Call #{participant.sip_address}", participant.sip_address) %></td>
     <td><%= participant.phone_number %></td>
     <td><%= link_to 'Show', participant %></td>
     <td><%= link_to 'Edit', edit_participant_path(participant) %></td>
