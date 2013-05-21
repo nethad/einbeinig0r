@@ -1,6 +1,6 @@
 module ParticipantsHelper
   def skype_link_to(text, user)
-    link_to text, "skype:#{user}?call"
+    (link_to image_tag("skype-logo.png", width: "20px", height: "20px") , "skype:#{user}?call") + " #{user}"
   end
 
   def sip_link_to(text, address)
