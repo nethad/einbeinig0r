@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
-  email: MyString
+  name: Off By One Jesus
+  email: jesus@godlovesyou.tv
   born_in_year: 1
-  topic_keywords: MyString
-  topic_description: MyText
-  skype_user: MyString
-  gmail_address: MyString
-  sip_address: MyString
-  phone_number: MyString
+  topic_keywords: dad,myrrh,frankincense
+  topic_description: Read the keywords
+  skype_user: jesus1337
+  gmail_address: jesus@gmail.com
+  sip_address: jesus@heaven.va
+  phone_number: 01189998819991197253
 
 two:
   name: MyString
