@@ -22,8 +22,6 @@ end
 
 gem 'jquery-rails'
 
-gem 'rails-backbone'
-
 group :test do
 	gem 'minitest'
 	gem 'minitest-rails-shoulda'
