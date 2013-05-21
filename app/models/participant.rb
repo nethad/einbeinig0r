@@ -6,5 +6,11 @@ class Participant < ActiveRecord::Base
   validates :born_in_year, presence: true
   validates :topic_keywords, presence: true
   validates :topic_description, presence: true
-  
+
+  @email_regexp = /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+\z/
+
+  validates :email, format: { with: @email_regexp, message: "Email address is invalid." }
+  validates :gmail_address, format: { with: @email_regexp, message: "GMail address is invalid." }
+  validates :sip_address, format: { with: @email_regexp, message: "SIP address is invalid." }
+
 end
