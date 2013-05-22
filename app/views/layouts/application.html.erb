@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Einbeinig0r</title>
+  <title><%= I18n.t 'application_title' %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+
+<div class="navbar">
+  <div class="navbar-inner">
+  <%= link_to I18n.t('application_title'), root_path, :class => "brand" %>
+    <ul class="nav">
+      <li class="active"><%= link_to I18n.t('activerecord.models.participants'), participants_path %></li>
+      <li><%= link_to I18n.t('admin'), admin_path %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to I18n.t('sign_out'), destroy_user_session_path, method: :delete %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<p class="text-info"><%= notice %></p>
+<p class="text-error"><%= alert %></p>
 
 <%= yield %>
 
