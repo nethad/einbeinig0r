@@ -24,9 +24,13 @@ gem 'jquery-rails'
 
 group :test do
 	gem 'minitest'
+  gem 'minitest-rails'
 	gem 'minitest-rails-shoulda'
 	gem 'shoulda-context'
 	gem 'turn'
+
+  gem 'capybara'
+  gem 'poltergeist'
 end
 
 # To use ActiveModel has_secure_password
